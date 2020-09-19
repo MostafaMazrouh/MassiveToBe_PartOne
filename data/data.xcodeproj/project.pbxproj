@@ -12,6 +12,11 @@
 		49BCB37E250E187E0050495B /* data.h in Headers */ = {isa = PBXBuildFile; fileRef = 49BCB370250E187E0050495B /* data.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49BCB3D6250E56880050495B /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BCB3D5250E56880050495B /* domain.framework */; };
 		49BCB3D7250E56880050495B /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49BCB3D5250E56880050495B /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49BCB3F22513ABFE0050495B /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB3F12513ABFE0050495B /* PostModel.swift */; };
+		49BCB3F42513AC2C0050495B /* PostDataRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB3F32513AC2C0050495B /* PostDataRepo.swift */; };
+		49BCB3F62513AC5D0050495B /* PostRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB3F52513AC5D0050495B /* PostRemoteDataSource.swift */; };
+		49BCB3F82513AC740050495B /* PostLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB3F72513AC740050495B /* PostLocalDataSource.swift */; };
+		49BCB3FB2513ADFE0050495B /* Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB3FA2513ADFE0050495B /* Coder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		49BCB37B250E187E0050495B /* dataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataTests.swift; sourceTree = "<group>"; };
 		49BCB37D250E187E0050495B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49BCB3D5250E56880050495B /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49BCB3F12513ABFE0050495B /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		49BCB3F32513AC2C0050495B /* PostDataRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataRepo.swift; sourceTree = "<group>"; };
+		49BCB3F52513AC5D0050495B /* PostRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteDataSource.swift; sourceTree = "<group>"; };
+		49BCB3F72513AC740050495B /* PostLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocalDataSource.swift; sourceTree = "<group>"; };
+		49BCB3FA2513ADFE0050495B /* Coder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,8 @@
 			children = (
 				49BCB370250E187E0050495B /* data.h */,
 				49BCB371250E187E0050495B /* Info.plist */,
+				49BCB3F02513ABC10050495B /* Post */,
+				49BCB3F92513ADEE0050495B /* Common */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -111,6 +123,25 @@
 				49BCB3D5250E56880050495B /* domain.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49BCB3F02513ABC10050495B /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				49BCB3F32513AC2C0050495B /* PostDataRepo.swift */,
+				49BCB3F12513ABFE0050495B /* PostModel.swift */,
+				49BCB3F52513AC5D0050495B /* PostRemoteDataSource.swift */,
+				49BCB3F72513AC740050495B /* PostLocalDataSource.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		49BCB3F92513ADEE0050495B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				49BCB3FA2513ADFE0050495B /* Coder.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +207,7 @@
 				TargetAttributes = {
 					49BCB36C250E187E0050495B = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					49BCB375250E187E0050495B = {
 						CreatedOnToolsVersion = 11.6;
@@ -223,6 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BCB3F82513AC740050495B /* PostLocalDataSource.swift in Sources */,
+				49BCB3FB2513ADFE0050495B /* Coder.swift in Sources */,
+				49BCB3F22513ABFE0050495B /* PostModel.swift in Sources */,
+				49BCB3F42513AC2C0050495B /* PostDataRepo.swift in Sources */,
+				49BCB3F62513AC5D0050495B /* PostRemoteDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +405,7 @@
 		49BCB382250E187E0050495B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = H3J6B8XHH2;
@@ -384,6 +422,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Thiqah.data;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -392,6 +431,7 @@
 		49BCB383250E187E0050495B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = H3J6B8XHH2;
@@ -416,6 +456,7 @@
 		49BCB385250E187E0050495B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3J6B8XHH2;
 				INFOPLIST_FILE = dataTests/Info.plist;
@@ -434,6 +475,7 @@
 		49BCB386250E187E0050495B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3J6B8XHH2;
 				INFOPLIST_FILE = dataTests/Info.plist;

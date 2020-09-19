@@ -10,7 +10,6 @@
 		3D55BB66B6228C8F307AA706 /* Pods_MassiveToBe_MassiveToBeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE8EA210327C86140E55776 /* Pods_MassiveToBe_MassiveToBeUITests.framework */; };
 		49BCB334250DD3100050495B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB333250DD3100050495B /* AppDelegate.swift */; };
 		49BCB336250DD3100050495B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB335250DD3100050495B /* SceneDelegate.swift */; };
-		49BCB338250DD3100050495B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB337250DD3100050495B /* ContentView.swift */; };
 		49BCB33A250DD3130050495B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BCB339250DD3130050495B /* Assets.xcassets */; };
 		49BCB33D250DD3130050495B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BCB33C250DD3130050495B /* Preview Assets.xcassets */; };
 		49BCB340250DD3130050495B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BCB33E250DD3130050495B /* LaunchScreen.storyboard */; };
@@ -22,6 +21,10 @@
 		49BCB3DF250E56960050495B /* presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49BCB3DD250E56960050495B /* presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		49BCB3E1250E569C0050495B /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BCB3E0250E569C0050495B /* domain.framework */; };
 		49BCB3E2250E569C0050495B /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49BCB3E0250E569C0050495B /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49BCB3FF2514E3F20050495B /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB3FE2514E3F20050495B /* AppEnvironment.swift */; };
+		49BCB4012514E4B30050495B /* AppDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB4002514E4B30050495B /* AppDI.swift */; };
+		49BCB4032514E4C20050495B /* PostDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB4022514E4C20050495B /* PostDI.swift */; };
+		49BCB40D2514FA210050495B /* PostDetailsDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB40C2514FA210050495B /* PostDetailsDI.swift */; };
 		67A31371D5A9A6416F53FEB3 /* Pods_MassiveToBeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2AA2BC20FDCB95BA8BD556 /* Pods_MassiveToBeTests.framework */; };
 		87D54AF803EE67C4A6985587 /* Pods_MassiveToBe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF85166B40E241EFAF1BBD1E /* Pods_MassiveToBe.framework */; };
 /* End PBXBuildFile section */
@@ -67,7 +70,6 @@
 		49BCB330250DD3100050495B /* MassiveToBe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MassiveToBe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BCB333250DD3100050495B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49BCB335250DD3100050495B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		49BCB337250DD3100050495B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49BCB339250DD3130050495B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49BCB33C250DD3130050495B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49BCB33F250DD3130050495B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,6 +83,10 @@
 		49BCB3D9250E568F0050495B /* data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BCB3DD250E56960050495B /* presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BCB3E0250E569C0050495B /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49BCB3FE2514E3F20050495B /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		49BCB4002514E4B30050495B /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
+		49BCB4022514E4C20050495B /* PostDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDI.swift; sourceTree = "<group>"; };
+		49BCB40C2514FA210050495B /* PostDetailsDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsDI.swift; sourceTree = "<group>"; };
 		4EA2E1098EBBC348E811D927 /* Pods-MassiveToBeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassiveToBeTests.debug.xcconfig"; path = "Target Support Files/Pods-MassiveToBeTests/Pods-MassiveToBeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D68FA847A26AC95EF13AE40 /* Pods-MassiveToBeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassiveToBeTests.release.xcconfig"; path = "Target Support Files/Pods-MassiveToBeTests/Pods-MassiveToBeTests.release.xcconfig"; sourceTree = "<group>"; };
 		79DF302BE775700F65B0FCE1 /* Pods-MassiveToBe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassiveToBe.release.xcconfig"; path = "Target Support Files/Pods-MassiveToBe/Pods-MassiveToBe.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,7 +165,8 @@
 			children = (
 				49BCB333250DD3100050495B /* AppDelegate.swift */,
 				49BCB335250DD3100050495B /* SceneDelegate.swift */,
-				49BCB337250DD3100050495B /* ContentView.swift */,
+				49BCB3FC2514E3A70050495B /* AppDI */,
+				49BCB3FD2514E3E20050495B /* AppEnvironment */,
 				49BCB339250DD3130050495B /* Assets.xcassets */,
 				49BCB33E250DD3130050495B /* LaunchScreen.storyboard */,
 				49BCB341250DD3130050495B /* Info.plist */,
@@ -192,6 +199,24 @@
 				49BCB357250DD3140050495B /* Info.plist */,
 			);
 			path = MassiveToBeUITests;
+			sourceTree = "<group>";
+		};
+		49BCB3FC2514E3A70050495B /* AppDI */ = {
+			isa = PBXGroup;
+			children = (
+				49BCB4002514E4B30050495B /* AppDI.swift */,
+				49BCB4022514E4C20050495B /* PostDI.swift */,
+				49BCB40C2514FA210050495B /* PostDetailsDI.swift */,
+			);
+			path = AppDI;
+			sourceTree = "<group>";
+		};
+		49BCB3FD2514E3E20050495B /* AppEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				49BCB3FE2514E3F20050495B /* AppEnvironment.swift */,
+			);
+			path = AppEnvironment;
 			sourceTree = "<group>";
 		};
 		717392B97734727A369F26F8 /* Frameworks */ = {
@@ -412,8 +437,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				49BCB334250DD3100050495B /* AppDelegate.swift in Sources */,
+				49BCB40D2514FA210050495B /* PostDetailsDI.swift in Sources */,
+				49BCB3FF2514E3F20050495B /* AppEnvironment.swift in Sources */,
+				49BCB4032514E4C20050495B /* PostDI.swift in Sources */,
+				49BCB4012514E4B30050495B /* AppDI.swift in Sources */,
 				49BCB336250DD3100050495B /* SceneDelegate.swift in Sources */,
-				49BCB338250DD3100050495B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

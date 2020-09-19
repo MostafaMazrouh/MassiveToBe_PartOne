@@ -12,6 +12,11 @@
 		49BCB3A2250E43340050495B /* presentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 49BCB394250E43340050495B /* presentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49BCB3D1250E524A0050495B /* data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BCB3D0250E524A0050495B /* data.framework */; };
 		49BCB3D2250E524A0050495B /* data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49BCB3D0250E524A0050495B /* data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49BCB3ED2510FAFD0050495B /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB3EC2510FAFD0050495B /* PostView.swift */; };
+		49BCB3EF2510FB220050495B /* PostVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB3EE2510FB220050495B /* PostVM.swift */; };
+		49BCB4062514EF1E0050495B /* AppDIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB4052514EF1E0050495B /* AppDIInterface.swift */; };
+		49BCB4092514F82A0050495B /* PostDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB4082514F82A0050495B /* PostDetailsView.swift */; };
+		49BCB40B2514F8360050495B /* PostDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB40A2514F8360050495B /* PostDetailsVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		49BCB39F250E43340050495B /* presentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presentationTests.swift; sourceTree = "<group>"; };
 		49BCB3A1250E43340050495B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49BCB3D0250E524A0050495B /* data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49BCB3EC2510FAFD0050495B /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		49BCB3EE2510FB220050495B /* PostVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVM.swift; sourceTree = "<group>"; };
+		49BCB4052514EF1E0050495B /* AppDIInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIInterface.swift; sourceTree = "<group>"; };
+		49BCB4082514F82A0050495B /* PostDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsView.swift; sourceTree = "<group>"; };
+		49BCB40A2514F8360050495B /* PostDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,9 @@
 			children = (
 				49BCB394250E43340050495B /* presentation.h */,
 				49BCB395250E43340050495B /* Info.plist */,
+				49BCB4042514EF0D0050495B /* AppDIInterface */,
+				49BCB3EB2510FAE30050495B /* Post */,
+				49BCB4072514F80E0050495B /* PostDetails */,
 			);
 			path = presentation;
 			sourceTree = "<group>";
@@ -111,6 +124,32 @@
 				49BCB3D0250E524A0050495B /* data.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49BCB3EB2510FAE30050495B /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				49BCB3EC2510FAFD0050495B /* PostView.swift */,
+				49BCB3EE2510FB220050495B /* PostVM.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		49BCB4042514EF0D0050495B /* AppDIInterface */ = {
+			isa = PBXGroup;
+			children = (
+				49BCB4052514EF1E0050495B /* AppDIInterface.swift */,
+			);
+			path = AppDIInterface;
+			sourceTree = "<group>";
+		};
+		49BCB4072514F80E0050495B /* PostDetails */ = {
+			isa = PBXGroup;
+			children = (
+				49BCB4082514F82A0050495B /* PostDetailsView.swift */,
+				49BCB40A2514F8360050495B /* PostDetailsVM.swift */,
+			);
+			path = PostDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +215,7 @@
 				TargetAttributes = {
 					49BCB390250E43340050495B = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					49BCB399250E43340050495B = {
 						CreatedOnToolsVersion = 11.6;
@@ -223,6 +263,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BCB4062514EF1E0050495B /* AppDIInterface.swift in Sources */,
+				49BCB3EF2510FB220050495B /* PostVM.swift in Sources */,
+				49BCB3ED2510FAFD0050495B /* PostView.swift in Sources */,
+				49BCB4092514F82A0050495B /* PostDetailsView.swift in Sources */,
+				49BCB40B2514F8360050495B /* PostDetailsVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +413,7 @@
 		49BCB3A6250E43340050495B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = H3J6B8XHH2;
@@ -384,6 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Thiqah.presentation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -392,6 +439,7 @@
 		49BCB3A7250E43340050495B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = H3J6B8XHH2;
@@ -416,6 +464,7 @@
 		49BCB3A9250E43340050495B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3J6B8XHH2;
 				INFOPLIST_FILE = presentationTests/Info.plist;
@@ -434,6 +483,7 @@
 		49BCB3AA250E43340050495B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3J6B8XHH2;
 				INFOPLIST_FILE = presentationTests/Info.plist;
