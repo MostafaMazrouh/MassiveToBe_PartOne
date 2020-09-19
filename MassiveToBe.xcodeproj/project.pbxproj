@@ -25,6 +25,7 @@
 		49BCB4012514E4B30050495B /* AppDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB4002514E4B30050495B /* AppDI.swift */; };
 		49BCB4032514E4C20050495B /* PostDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB4022514E4C20050495B /* PostDI.swift */; };
 		49BCB40D2514FA210050495B /* PostDetailsDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB40C2514FA210050495B /* PostDetailsDI.swift */; };
+		49BCB40F25161B810050495B /* Post Diagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BCB40E25161B810050495B /* Post Diagram.png */; };
 		67A31371D5A9A6416F53FEB3 /* Pods_MassiveToBeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2AA2BC20FDCB95BA8BD556 /* Pods_MassiveToBeTests.framework */; };
 		87D54AF803EE67C4A6985587 /* Pods_MassiveToBe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF85166B40E241EFAF1BBD1E /* Pods_MassiveToBe.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +88,7 @@
 		49BCB4002514E4B30050495B /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
 		49BCB4022514E4C20050495B /* PostDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDI.swift; sourceTree = "<group>"; };
 		49BCB40C2514FA210050495B /* PostDetailsDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsDI.swift; sourceTree = "<group>"; };
+		49BCB40E25161B810050495B /* Post Diagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Post Diagram.png"; sourceTree = "<group>"; };
 		4EA2E1098EBBC348E811D927 /* Pods-MassiveToBeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassiveToBeTests.debug.xcconfig"; path = "Target Support Files/Pods-MassiveToBeTests/Pods-MassiveToBeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D68FA847A26AC95EF13AE40 /* Pods-MassiveToBeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassiveToBeTests.release.xcconfig"; path = "Target Support Files/Pods-MassiveToBeTests/Pods-MassiveToBeTests.release.xcconfig"; sourceTree = "<group>"; };
 		79DF302BE775700F65B0FCE1 /* Pods-MassiveToBe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassiveToBe.release.xcconfig"; path = "Target Support Files/Pods-MassiveToBe/Pods-MassiveToBe.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		49BCB3FC2514E3A70050495B /* AppDI */ = {
 			isa = PBXGroup;
 			children = (
+				49BCB40E25161B810050495B /* Post Diagram.png */,
 				49BCB4002514E4B30050495B /* AppDI.swift */,
 				49BCB4022514E4C20050495B /* PostDI.swift */,
 				49BCB40C2514FA210050495B /* PostDetailsDI.swift */,
@@ -340,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BCB40F25161B810050495B /* Post Diagram.png in Resources */,
 				49BCB340250DD3130050495B /* LaunchScreen.storyboard in Resources */,
 				49BCB33D250DD3130050495B /* Preview Assets.xcassets in Resources */,
 				49BCB33A250DD3130050495B /* Assets.xcassets in Resources */,
