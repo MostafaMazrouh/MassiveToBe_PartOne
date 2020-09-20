@@ -18,8 +18,6 @@ public protocol PostRemoteDataSourceInterface {
 }
 
 
-
-
 public class PostRemoteDataSource: PostRemoteDataSourceInterface {
     
     let urlString: String
